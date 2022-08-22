@@ -1,0 +1,19 @@
+{
+  "name": "airdrop-nfts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "airdrop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/spl-token": "^0.3.1",
+    "@solana/web3.js": "^1.53.0",
+    "@supercharge/promise-pool": "^2.3.2",
+    "cli-progress": "^3.11.2",
+    "commander": "^9.4.0",
+    "tsv": "^0.2.0"
+  }
+}
