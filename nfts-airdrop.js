@@ -114,6 +114,8 @@ program
         pairs = TSV.parse(pairs);
       } else if (list.endsWith(".csv")) {
         pairs = CSV.parse(pairs);
+      } else if (list.endsWith(".json")) {
+        pairs = JSON.parse(pairs);
       } else {
         throw new Error("Unrecognized list format");
       }

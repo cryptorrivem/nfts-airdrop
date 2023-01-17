@@ -32,7 +32,7 @@ Options:
 
 # Send NFTs to many wallets
 
-List file must be either a csv or tsv file of `mint` and `destination` pairs. If any transaction fails to complete, you can retry the process and pass the `-s` or `--skip-missing-mints` to skip those sent from the original list and retry the failed ones.
+List file must be either a json, csv or tsv file of `mint` and `destination` pairs. If any transaction fails to complete, you can retry the process and pass the `-s` or `--skip-missing-mints` to skip those sent from the original list and retry the failed ones.
 
 ```
 Usage: nfts-airdrop send-to-many-wallets [options]

@@ -157,15 +157,19 @@ async function sendMints({
 
   bar.stop();
 
-  console.info("Results:", results);
+  console.info("Results:\n");
+  console.info(results.join("\n\n"));
+  console.info();
   console.info(
-    "Errors:",
-    errors.map(
-      (e) =>
-        `${e.raw}\n${e.item
-          .map((c) => `Mint: ${c.mint} => To: ${c.destination}`)
-          .join("\n")}`
-    )
+    "Errors:\n",
+    errors
+      .map(
+        (e) =>
+          `${e.raw}\n${e.item
+            .map((c) => `Mint: ${c.mint} => To: ${c.destination}`)
+            .join("\n")}`
+      )
+      .join("\n\n")
   );
 }
 
